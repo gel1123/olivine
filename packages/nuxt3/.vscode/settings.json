@@ -1,0 +1,65 @@
+{
+  "eslint.enable": true,
+  "eslint.options": {
+    "overrideConfigFile": ".eslintrc"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    // <---------------- FormKit ---------------->
+    // https://formkit.com/essentials/styling#section-key-class-props
+    // https://formkit.com/essentials/inputs#sections#sections
+    "outer-class",
+    "wrapper-class",
+    "label-class",
+    "prefix-class",
+    "prefixIcon-class",
+    "inner-class",
+    "suffix-class",
+    "suffixIcon-class",
+    "input-class",
+    "help-class",
+    "messages-class",
+    "message-class",
+    // </---------------- FormKit ---------------->
+  ]
+}

@@ -1,0 +1,16 @@
+query GetCountries(
+  $filter: CountryFilterInput
+) {
+  countries(
+    filter: $filter
+  ) {
+    name
+    continent {
+      code
+      name
+    }
+    languages {
+      name
+    }
+  }
+}

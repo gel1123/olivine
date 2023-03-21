@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/tailwindcss": "^6.6.0",
+    "@storybook/addon-actions": "^7.0.0-rc.5",
+    "@storybook/addon-essentials": "^7.0.0-rc.5",
+    "@storybook/addon-interactions": "^7.0.0-rc.5",
+    "@storybook/addon-links": "^7.0.0-rc.5",
+    "@storybook/addon-mdx-gfm": "^7.0.0-rc.5",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "@storybook/vue3": "^7.0.0-rc.5",
+    "@storybook/vue3-vite": "^7.0.0-rc.5",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.36.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-tailwindcss": "^3.10.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "nuxt": "^3.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.0-rc.5",
+    "tailwindcss": "^3.2.7",
+    "unplugin-auto-import": "^0.15.1",
+    "unplugin-vue-components": "^0.24.1",
+    "vue-loader": "^16.8.3"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-vue": "^3.1.10",
+    "@formkit/nuxt": "^0.16.2",
+    "@formkit/vue": "^0.16.2",
+    "aws-amplify": "^5.0.20",
+    "nuxt-graphql-client": "^0.2.27"
+  }
+}

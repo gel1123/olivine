@@ -1,0 +1,74 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "plugins": [
+    "tailwindcss",
+    "import",
+    "unused-imports"
+  ],
+  "rules": {
+    "no-console": "off",
+    "indent": [
+      "error",
+      2
+    ],
+    "vue/html-indent": [
+      "error",
+      2
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    // 未使用のimport
+    "unused-imports/no-unused-imports": "error",
+    // import整列
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          [
+            "parent",
+            "sibling"
+          ],
+          "object",
+          "type",
+          "index"
+        ],
+        "newlines-between": "always",
+        "pathGroupsExcludedImportTypes": [
+          "builtin"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    // Tailwind CSS以外のクラスを許容するなら下記をoffにする。defaultはwarn。
+    "tailwindcss/no-custom-classname": "warn"
+  },
+  "settings": {
+    // https://github.com/francoismassart/eslint-plugin-tailwindcss#more-settings
+    "tailwindcss": {
+      // FormKitのSection Key Classに対応可能な正規表現（outer-classなどの属性に対応）
+      "classRegex": "class(Name)?$"
+    }
+  }
+}

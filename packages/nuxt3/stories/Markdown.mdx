@@ -1,0 +1,108 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="MDXの使い方" />
+
+<h1 className="first-letter:text-7xl">MDX</h1>
+
+## はじめに：mdxファイル編集時に知っておくと便利なこと
+
+VSCodeでmdxファイルを編集する際、デフォルトでは行端が折り返されず編集しにくいという難点がある。しかしVSCodeには `option + z` で行端の折り返しモードを切り替える機能があるので、編集時にはこれを使うと便利。
+
+## MDXとは
+
+MDXとは、マークダウンで書けるJSXです。
+
+## マークダウンとは
+
+マークダウンとは、簡潔な記法で文章を書くことができるマークアップ言語です。
+
+以下にマークダウンの記法を紹介します。
+
+## 見出し
+
+```
+# 見出し1
+## 見出し2
+### 見出し3
+#### 見出し4
+```
+
+## list
+
+- tips1
+- tips2
+
+```
+- tips1
+- tips2
+```
+
+## ordered list
+
+1. tips3
+2. tips4
+
+```
+1. tips3
+2. tips4
+```
+
+## link
+
+[qiita](https://qiita.com/)
+
+```
+[qiita](https://qiita.com/)
+```
+
+## 引用
+
+> hogefuge
+
+```
+> hogefuge
+```
+
+## コード
+
+```typescript
+const hoge: string = 'fuga';
+```
+
+```js
+const hoge = 'fuga';
+```
+
+```sh
+echo hoge
+```
+
+## 画像
+
+例は割愛。
+
+```
+![代替テキスト](画像のURL "画像タイトル")
+```
+
+## テーブル
+
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       | This        | This         |
+| column     | column      | column       |
+| will       | will        | will         |
+| be         | be          | be           |
+| left       | right       | center       |
+| aligned    | aligned     | aligned      |
+
+```
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       | This        | This         |
+| column     | column      | column       |
+| will       | will        | will         |
+| be         | be          | be           |
+| left       | right       | center       |
+| aligned    | aligned     | aligned      |
+```
