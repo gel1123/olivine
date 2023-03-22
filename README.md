@@ -22,3 +22,8 @@ SST v2.2.4  ready!
    GraphQlApiKey: da2-q6sqpfsz7ffnzjrt6ynyarfsna
    RestApiEndpoint: https://16o5pi776d.execute-api.ap-northeast-1.amazonaws.com
 ```
+
+## 参考
+
+ - https://sst.dev/examples/how-to-create-a-serverless-graphql-api-with-aws-appsync.html
+

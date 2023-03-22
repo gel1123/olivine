@@ -10,7 +10,7 @@ export default async function deleteNote(noteId: string): Promise<string> {
     TableName: Table.Notes.tableName,
   };
 
-  // await dynamoDb.delete(params).promise();
+  await dynamoDb.delete(params).promise();
 
   return noteId;
 }
