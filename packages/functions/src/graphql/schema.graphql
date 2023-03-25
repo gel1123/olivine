@@ -16,10 +16,15 @@ input UpdateNoteInput {
 type Query {
   listNotes: [Note]
   getNoteById(noteId: String!): Note
+  listNotesVtl: [Note]
+  getNoteByIdVtl(noteId: String!): Note
 }
 
 type Mutation {
   createNote(note: NoteInput!): Note
   deleteNote(noteId: String!): String
   updateNote(note: UpdateNoteInput!): Note
+  createNoteVtl(note: NoteInput!): Note
+  deleteNoteVtl(noteId: String!): String
+  updateNoteVtl(note: UpdateNoteInput!): Note
 }
