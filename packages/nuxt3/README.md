@@ -148,3 +148,9 @@ TypeError: Cannot read properties of undefined (reading 'createSnapshot')
     at Object.createSnapshot (/Users/sig/work/myrepo/nuxt3-starter-01/node_modules/html-webpack-plugin/lib/webpack5/file-watcher-api.js:12:10)
     at /Users/sig/work/myrepo/nuxt3-starter-01/node_modules/html-webpack-plugin/lib/cached-child-compiler.js:219:35
 ```
+
+### npm run generateでAmplifyのConfigurationが正しくないと怒られた
+
+見落としがちなのが、.envの設定忘れ。
+
+リポジトリをcloneしてすぐの時など、.env未作成の場合があるから、その場合AmplifyのConfigurationを正しく設定できない。
