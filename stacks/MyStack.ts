@@ -1,9 +1,10 @@
+import { PriceClass } from "aws-cdk-lib/aws-cloudfront";
 import {
   StackContext,
   Api,
   Table,
   AppSyncApi,
-  AppSyncApiResolverProps,
+  StaticSite,
 } from "sst/constructs";
 
 export function API({ stack }: StackContext) {
@@ -167,5 +168,29 @@ export function API({ stack }: StackContext) {
   });
   stack.addOutputs({
     RestApiEndpoint: restApi.url,
+  });
+}
+
+export function Site({ stack }: StackContext) {
+  const site = new StaticSite(stack, "site", {
+    // Next.jsの静的Webサイトをデプロイするコードで例示　
+    path: "packages/nuxt3",
+    buildOutput: ".output/public",
+    buildCommand: "npm run generate",
+  
+    // もしカスタムドメインを持っていて静的サイトに割り振りたいなら
+    // customDomain: "ドメイン名をここに書く",
+  
+    // （必要なら）SSTがラップしているCDKのプロパティを下記でいじる
+    // cdk: {
+    //   distribution: {
+    //     // CloudFrontの価格クラスを200に設定
+    //     priceClass: PriceClass.PRICE_CLASS_200
+    //   }
+    // }
+  });
+
+  stack.addOutputs({
+    "SiteUrl": site.url ?? "",
   });
 }
